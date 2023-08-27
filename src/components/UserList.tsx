@@ -64,8 +64,10 @@ function UserList({ currentPage, searchName }: Props) {
   return (
     <div>
       {allUsers.map((user: Person) => {
-        //console.log(user);
 
+      const year = user.registered.date.slice(0, 4);
+      const month = user.registered.date.slice(5, 7); 
+      const day = user.registered.date.slice(8, 10);        
         
         return (
           <div className="list" key={user.login.uuid}>
@@ -76,7 +78,7 @@ function UserList({ currentPage, searchName }: Props) {
             <div className="column">{user.name.first}</div>
             <div className="column">{user.name.last}</div>
             <div className="column">{user.name.title}</div>
-            <div className="column">{user.registered.date}</div>
+            <div className="column">{day}/{month}/{year}</div>
             <div className="column">{user.dob.age}</div>
             <Link 
               className="viewProfile" 
