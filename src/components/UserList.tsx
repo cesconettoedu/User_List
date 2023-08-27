@@ -27,9 +27,11 @@ function UserList({ currentPage, searchName }: Props) {
       first: string;
       last: string;
     };
-    // date: string;
     dob: {
       age: number;
+    };
+    registered: {
+      date: string;
     };
     picture: {
       large: string
@@ -74,7 +76,7 @@ function UserList({ currentPage, searchName }: Props) {
             <div className="column">{user.name.first}</div>
             <div className="column">{user.name.last}</div>
             <div className="column">{user.name.title}</div>
-            <div className="column">date</div>
+            <div className="column">{user.registered.date}</div>
             <div className="column">{user.dob.age}</div>
             <Link 
               className="viewProfile" 
