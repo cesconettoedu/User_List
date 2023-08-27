@@ -73,7 +73,7 @@ function UserList({ currentPage, searchName }: Props) {
             <Link 
               className="viewProfile" 
               to={{ 
-                pathname: `/user/${user.login.uuid}`}}
+                pathname: '/user/userProfile'}}
                 state={{
                   firstname: user.name.first, 
                   lastname: user.name.last,
