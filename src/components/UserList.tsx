@@ -13,6 +13,7 @@ function UserList({ currentPage, searchName }: Props) {
   interface Person {
     login: {
       uuid: string;
+      username: string;
     };
     id: {
       name: string;
@@ -32,6 +33,11 @@ function UserList({ currentPage, searchName }: Props) {
     };
     picture: {
       large: string
+    };
+    location: {
+      city: string;
+      state: string;
+      country: string;
     } 
   }
 
@@ -80,7 +86,11 @@ function UserList({ currentPage, searchName }: Props) {
                   title: user.name.title,
                   photo: user.picture.large,
                   age: user.dob.age,
-                  
+                  city: user.location.city,
+                  state: user.location.state,
+                  country: user.location.country,
+                  email: user.email,
+                  username: user.login.username
                 }}                
             >
               View profile
