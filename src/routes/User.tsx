@@ -53,8 +53,13 @@ function User() {
         </button>
       </div>
 
-      <div className="outlet">
-        <Outlet/>
+      <div className="content">
+        {info && 
+          <div>
+            <h3>First name</h3>
+            <h4>{location.state.firstname}</h4>
+          </div>
+        }
       </div>
     </div>
   );

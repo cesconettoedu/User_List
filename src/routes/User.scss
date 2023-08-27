@@ -27,23 +27,26 @@ h2 {
 
 
 .infoEach_inactive {
+  border: 0;
   margin: 30px;
-    font-size: 20px;
+  font-size: 20px;
   padding: 5px 50px;
   color: #FFF;
   background-color: rgb(19, 18, 18);
+  cursor: pointer;
 }
 .infoEach_active {
+  border: 0;
   margin: 30px;
-    font-size: 20px;
+  font-size: 20px;
   padding: 5px 50px;
   color: #FFF;
-  border-bottom: 3px solid #9400D3;
   background-color: rgb(19, 18, 18);
-
+  border-bottom: 3px solid #9400D3;
+  cursor: pointer;
 }
 
-.outlet {
+.content {
   margin: auto;
   width: 35%;
   text-align: start;
