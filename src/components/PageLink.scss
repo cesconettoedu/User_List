@@ -1,0 +1,13 @@
+.page-link {
+  text-decoration: none;
+  border: 1px solid #9400D3;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 10px 15px;
+  color: #FFF;
+  transition: color 0.15s ease-in-out;  
+}
+
+.page-link.active {
+  background-color: #9400D3;
+}

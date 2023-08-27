@@ -1,0 +1,47 @@
+.back {
+  text-align-last: left;
+  margin-bottom: 20px;
+}
+.backLink{
+  color: #7e7d7d;
+}
+a {
+  text-decoration: none;
+}
+
+
+.user {
+  border-bottom: 1px solid #292929;
+  padding: 20px 0px;
+}
+.userImg {
+  border-radius: 50%;
+}
+h2 {
+  margin-bottom: 5px;
+}
+.title {
+  margin: 0;
+  font-weight: 100;
+}
+
+.infoUser {
+  margin: 30px;
+  font-size: 20px;
+}
+
+.infoEach_inactive {
+  padding: 5px 50px;
+  color: #FFF;
+}
+.infoEach_active {
+  padding: 5px 50px;
+  color: #FFF;
+  border-bottom: 3px solid #9400D3;
+}
+
+.outlet {
+  margin: auto;
+  width: 35%;
+  text-align: start;
+}
