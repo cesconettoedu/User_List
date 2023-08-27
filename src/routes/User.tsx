@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Link, Outlet, useLocation, useParams } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import "./User.scss";
 
 function User() {
-  const {id} = useParams();
   const location = useLocation()
-  console.log(location.state.firstname);
   
+  const [info, setInfo] = useState(false);
+  const [loc, setLoc] = useState(false);
+  const [login, setLogin] = useState(false);
  
   useEffect(() => {
    
@@ -29,10 +30,27 @@ function User() {
         <h3 className="title">{location.state.title}</h3>
       </div>
 
-      <div className="infoUser">
-        <Link to="/details/detailsInfo" className={location.pathname!=='/details/detailsInfo' ? 'infoEach_inactive' : 'infoEach_active' }> Info </Link>
-        <Link to="/details/detailsLocation" className={location.pathname!=='/details/detailsLocation' ? 'infoEach_inactive' : 'infoEach_active' }> Location </Link>
-        <Link to="/details/detailsLogin" className={location.pathname!=='/details/detailsLogin' ? 'infoEach_inactive' : 'infoEach_active' }> Login </Link>
+      <div >
+        <button 
+          onClick={()=>{setInfo(true); setLoc(false); setLogin(false)}}
+          className={info ? 'infoEach_active' : 'infoEach_inactive' }
+        > 
+          Info 
+        </button>
+
+         <button 
+          onClick={()=>{setInfo(false); setLoc(true); setLogin(false)}}
+          className={loc ? 'infoEach_active' : 'infoEach_inactive' }
+        > 
+          Location 
+        </button>
+
+         <button 
+          onClick={()=>{setInfo(false); setLoc(false); setLogin(true)}}
+          className={login ? 'infoEach_active' : 'infoEach_inactive' }
+        > 
+          Login 
+        </button>
       </div>
 
       <div className="outlet">

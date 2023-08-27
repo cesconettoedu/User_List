@@ -25,19 +25,22 @@ h2 {
   font-weight: 100;
 }
 
-.infoUser {
-  margin: 30px;
-  font-size: 20px;
-}
 
 .infoEach_inactive {
+  margin: 30px;
+    font-size: 20px;
   padding: 5px 50px;
   color: #FFF;
+  background-color: rgb(19, 18, 18);
 }
 .infoEach_active {
+  margin: 30px;
+    font-size: 20px;
   padding: 5px 50px;
   color: #FFF;
   border-bottom: 3px solid #9400D3;
+  background-color: rgb(19, 18, 18);
+
 }
 
 .outlet {
@@ -45,3 +48,4 @@ h2 {
   width: 35%;
   text-align: start;
 }
+
