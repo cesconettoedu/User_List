@@ -43,7 +43,7 @@ function UserList({ currentPage, searchName }: Props) {
     } 
   }
 
-  
+  //fetch data from API
   const getAllUsers = () => {
     fetch(`https://randomuser.me/api/?page=${currentPage}&results=10&seed=abc`)
       .then((response) => response.json())

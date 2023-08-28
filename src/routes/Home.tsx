@@ -6,6 +6,8 @@ import Pagination from "../components/Pagination";
 function Home() {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchName, setSearchName] = useState('')
+
+  //maximum pages displayed at pagination
   const lastPage = 20;
 
   return (

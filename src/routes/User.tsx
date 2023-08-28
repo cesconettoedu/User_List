@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import "./User.sass";
 
 function User() {
+
+  //used to get the state from UserList when click in View Profile
   const location = useLocation();
 
   const [info, setInfo] = useState(true);
