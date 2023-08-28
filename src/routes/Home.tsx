@@ -11,8 +11,8 @@ function Home() {
   const lastPage = 20;
 
   return (
-    <div>
-      <div>
+    <>
+      
         <h2>List Users</h2>
 
         <input
@@ -45,8 +45,7 @@ function Home() {
           setCurrentPage={setCurrentPage}
         /> 
 
-      </div>
-    </div>
+    </>
   );
 }
 
