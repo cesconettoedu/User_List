@@ -14,7 +14,7 @@ function User() {
   useEffect(() => {}, []);
 
   return (
-    <div>
+    <>
       <div className="back">
         <a href="/" className="backLink">
           Back
@@ -97,7 +97,7 @@ function User() {
           </>
         )}
       </div>
-    </div>
+    </>
   );
 }
 
