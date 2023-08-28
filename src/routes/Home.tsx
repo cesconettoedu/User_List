@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Home.scss";
+import "./Home.sass";
 import UserList from "../components/UserList";
 import Pagination from "../components/Pagination";
 

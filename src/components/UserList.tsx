@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./UserList.scss";
+import "./UserList.sass";
 import { Link } from "react-router-dom";
 
 export type Props = {

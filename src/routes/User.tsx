@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import "./User.scss";
+import "./User.sass";
 
 function User() {
   const location = useLocation();

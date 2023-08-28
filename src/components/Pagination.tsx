@@ -1,6 +1,6 @@
 import React from "react";
 import PageLink from "./PageLink";
-import "./Pagination.scss";
+import "./Pagination.sass";
 import { getPaginationItems } from '../lib/pagination';
 
 export type Props = {
