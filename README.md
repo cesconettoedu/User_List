@@ -1,6 +1,6 @@
 # User List project
 
-Constuido em React + TypeScript + Vite
+Constuido em React + TypeScript + SCSS. Buscando informacoes em API.
 
 Para rodar o projeto siga os seguintes passos:
 
